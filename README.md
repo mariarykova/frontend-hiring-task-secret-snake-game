@@ -58,8 +58,7 @@ The second is the expiration of the bidding for the snake. The expiration
 means that only bids can be withdrawn, reducing the TVL.
 
 Finally, at the end of this stage, the third stage is the selection of
-the winner. The winner is the one who paid the most, but the amount that
-they must pay is the second most bidded amount.
+the winner. The winner is the second highest bid for the snake.
 
 ### APIs
 
