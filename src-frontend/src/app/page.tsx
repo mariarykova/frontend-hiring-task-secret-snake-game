@@ -7,6 +7,7 @@ import { connectToWebsocket } from "./api/websocket";
 import { WinnerSnakeBanner } from "./components/winner-banner";
 import { scrollToElement } from "./utils/scrollToElement";
 import { handleCardWinner } from "./utils/handleCardWinner";
+import MyName from "./components/my-name";
 
 export default function Home() {
   const [snakesCard, setSnakesCards] = useState<SnakeCardProps[]>([]);
@@ -122,6 +123,7 @@ export default function Home() {
 
   return (
     <main>
+      <MyName />
       <div className="p-20 max-[600px]:p-0">
         <div className="h-[500px] flex wrap justify-between items-center gap-5 overflow-y-scroll max-[600px]:flex-col h-[100vh]">
           {renderCards()}
